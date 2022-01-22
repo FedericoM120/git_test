@@ -23,13 +23,15 @@ function add7(num) {
 
 
 
-function capitalize(string) {
-    let text1 = string.slice(0).toUpperCase(); 
-    let text2 = string.slice(1).tolowerCase();
-    let text3 = text1.concat(text2);
-    return text3;
-    } 
-    console.log(capitalize)
+    function capitalize(string) {
+        let firstLetter = string.slice(0, 1).toUpperCase();
+        let restOfWord = string.slice(1).toLowerCase();
+        let capitalizedWord = firstLetter.concat(restOfWord);
+        return capitalizedWord;
+        }
+    console.log(capitalize("rAnDom"))
+
+
 
 function lastLetter(string) {
     return string.slice
